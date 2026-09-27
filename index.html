@@ -1,35 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Volif - AI Money Platform</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volif — Money That Thinks For You</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:system-ui,sans-serif;background:#0a0a0f;color:#fff}
-.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;background:radial-gradient(circle at 30% 20%, #4f46e5 0%, transparent 50%), #0a0a0f}
-h1{font-size:60px;font-weight:900;margin:0}
-p.sub{color:#9ca3af;font-size:20px;margin:20px auto;max-width:600px}
-.btn{display:inline-block;padding:16px 32px;background:#fff;color:#000;border-radius:100px;font-weight:700;text-decoration:none;margin:10px}
-.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:80px 20px;max-width:1000px;margin:0 auto}
-.card{background:#111119;border:1px solid #222;padding:30px;border-radius:20px}
-footer{text-align:center;padding:40px;color:#666}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Plus Jakarta Sans',sans-serif;background:#07070a;color:#fff}
+nav{max-width:1200px;margin:0 auto;padding:24px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;font-size:24px;letter-spacing:-1px}.logo b{color:#7c3aed}
+.hero{max-width:1200px;margin:0 auto;padding:60px 24px 40px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px}
+.badge{display:inline-block;background:#15151d;border:1px solid #2a2a3a;color:#a5a5b5;padding:6px 14px;border-radius:100px;font-size:11px;letter-spacing:1px;margin-bottom:20px}
+h1{font-size:68px;line-height:0.9;letter-spacing:-3.5px;font-weight:800}
+.grad{background:linear-gradient(90deg,#8b5cf6 0%,#ec4899 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.sub{color:#8e8ea0;font-size:18px;line-height:1.6;margin-top:20px;max-width:520px}
+.cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{background:#fff;color:#000;padding:16px 26px;border-radius:100px;font-weight:700;text-decoration:none;font-size:14px}
+.btn2{background:#18181f;border:1px solid #282838;color:#fff;padding:16px 26px;border-radius:100px;font-weight:600;text-decoration:none;font-size:14px}
+.mock{background:linear-gradient(180deg,#1a1a24,#0f0f14);border:1px solid #23232f;border-radius:28px;padding:26px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:1200px;margin:20px auto;padding:0 24px}
+.card{background:#111119;border:1px solid #1e1e2a;border-radius:20px;padding:22px}.card p{color:#7a7a8e;font-size:13px;line-height:1.5;margin-top:8px}
+.wait{max-width:720px;margin:80px auto;background:#12121a;border:1px solid #23233a;border-radius:32px;padding:40px 24px;text-align:center}
+.wait input{width:65%;background:#07070a;border:1px solid #2a2a3a;padding:14px 18px;border-radius:100px;color:#fff}
+footer{text-align:center;padding:60px;color:#444;font-size:11px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}h1{font-size:46px}.stats{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
+<nav><div class="logo">Volif<b>.</b></div><div style="color:#666;font-size:13px">Abuja • Lagos • Private Beta</div></nav>
+
 <div class="hero">
 <div>
-<h1>Volif.</h1>
-<h1>AI Money Platform</h1>
-<p class="sub">The future of personal finance. AI-powered savings, investments & wealth growth for Nigerians.</p>
-<a class="btn" href="#">Join Waitlist</a>
-<a class="btn" style="background:transparent;color:#fff;border:1px solid #333" href="#">View Demo</a>
+<div class="badge">● 1,247 NIGERIANS ON WAITLIST</div>
+<h1>Money that<br><span class="grad">thinks for you.</span></h1>
+<p class="sub">Volif is the AI-native bank for Africa. We auto-save, auto-invest, and auto-grow your money. No willpower needed.</p>
+<div class="cta">
+<a class="btn" href="#waitlist">Join Waitlist — Free</a>
+<a class="btn2" href="#">How it Works →</a>
 </div>
 </div>
-<div class="features">
-<div class="card"><h3>🤖 AI Savings</h3><p>Smart auto-savings that learns your spending habits.</p></div>
-<div class="card"><h3>📈 AI Investing</h3><p>Intelligent investment recommendations.</p></div>
-<div class="card"><h3>💸 Instant Growth</h3><p>Secure, fast, built for Nigeria.</p></div>
+
+<div class="mock">
+<div style="color:#9f7aea;font-size:12px;letter-spacing:1px">VOLIF AI • THIS MONTH</div>
+<div style="font-size:40px;font-weight:800;margin:14px 0">₦847,290 <span style="font-size:14px;color:#10b981">+12.4%</span></div>
+<div style="font-size:12px;color:#666;line-height:1.5">AI saved you ₦127k from spare change, optimized 3 investments, blocked 2 impulse buys.</div>
+<div style="margin-top:18px;border-top:1px solid #222;padding-top:14px;font-size:12px;color:#777;display:flex;justify-content:space-between"><span>🛡️ Emergency</span><span>₦340k</span></div>
+<div style="display:flex;justify-content:space-between;font-size:12px;color:#777;margin-top:8px"><span>📈 Investments</span><span>₦507k</span></div>
 </div>
-<footer>© 2026 Volif - Built by Emmanuel</footer>
+</div>
+
+<div class="stats">
+<div class="card"><b>🧠 AI Auto-Save</b><p>Learns your salary cycle, bills, and spending. Saves the perfect amount daily without you feeling it.</p></div><div class="card"><b>💵 Smart Invest</b><p>Auto-diversifies into Dollars, TBills, Stocks. Your financial twin working 24/7.</p></div>
+<div class="card"><b>🚫 Spend Guard</b><p>"Emmanuel, you have 3 similar shirts. Save ₦15k instead?" - blocks impulse spending.</p></div>
+</div>
+
+<div class="wait" id="waitlist">
+<h2 style="font-size:32px;letter-spacing:-1.5px">Get early access</h2>
+<p style="color:#777;margin:10px 0 20px;font-size:14px">First 1,000 users get lifetime Pro free. Built for Nigeria.</p>
+<form action="https://formspree.io/f/xrbyqzkr" method="POST">
+<input type="email" name="email" placeholder="Enter your email" required>
+<button class="btn" style="border:none;cursor:pointer;margin-left:6px">Join</button>
+</form>
+<p style="color:#444;font-size:10px;margin-top:12px">By joining, you agree to waitlist. No spam.</p>
+</div>
+
+<footer>© 2026 Volif Technologies — Crafted by Emmanuel (dcolossus-del) • Privacy • Terms</footer>
 </body>
 </html>
